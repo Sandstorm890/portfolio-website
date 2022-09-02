@@ -1,9 +1,12 @@
 {
     "title": "Freelancer",
     "name": "startbootstrap-freelancer",
+    "homepage": "https://Sandstorm890.github.io/zayne_goering",
     "version": "7.0.5",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "build:assets": "node scripts/build-assets.js",
         "build:pug": "node scripts/build-pug.js",
         "build:scripts": "node scripts/build-scripts.js",
@@ -23,7 +26,6 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/theme/freelancer",
     "bugs": {
         "url": "https://github.com/StartBootstrap/startbootstrap-freelancer/issues",
         "email": "feedback@startbootstrap.com"
@@ -45,6 +47,7 @@
         "browser-sync": "2.27.5",
         "chokidar": "3.5.2",
         "concurrently": "6.3.0",
+        "gh-pages": "^4.0.0",
         "postcss": "8.3.9",
         "prettier": "2.4.1",
         "pug": "3.0.2",
