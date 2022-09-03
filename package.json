@@ -1,7 +1,6 @@
 {
     "title": "Freelancer",
     "name": "startbootstrap-freelancer",
-    "homepage": "https://master.d2dvqjy1kpagem.amplifyapp.com",
     "version": "7.0.5",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
